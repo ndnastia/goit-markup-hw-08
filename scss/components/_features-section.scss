@@ -1,0 +1,40 @@
+.features {
+    background: $body-color;
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 30px;
+    }
+    
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 270px;
+        height: 120px;
+        margin-bottom: 30px;
+        background-color: $second-color;
+        border-radius: 4px;
+    }
+    
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.142;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $main-text-color;
+    }
+    
+    &__text {
+        font-size: 14px;
+        line-height: 1.714;
+        letter-spacing: 0.03em;
+        color: $second-text-color;
+        margin-bottom: 0;
+    }
+}

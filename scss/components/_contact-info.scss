@@ -1,0 +1,20 @@
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+    color: $second-text-color;
+    fill: currentColor;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $accent-text-color;
+        fill: $accent-text-color;
+    }
+}
