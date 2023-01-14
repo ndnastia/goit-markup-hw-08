@@ -1,0 +1,127 @@
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 480px;
+    background-color: $body-color;
+    transform: translateX(-100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &__container {
+        position: relative;
+        padding: 48px 40px;
+        overflow: scroll;
+    }
+
+    &__close-button {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: $body-color;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+        &:focus,
+        &:hover {
+            fill: $accent-text-color;
+        }
+    }
+
+    &__navigation {
+        margin-bottom: 302px;
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 32px;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.175;
+        letter-spacing: 0.02em;
+        color: $main-text-color;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:focus,
+        &:hover {
+            color: $accent-text-color;
+        }
+    }
+
+    &__contacts {
+        margin-bottom: 64px;
+    }
+
+    &__contact-item:not(:last-child) {
+        margin-bottom: 32px;
+    }
+
+    &__number {
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.176;
+        letter-spacing: 0.02em;
+        color: $second-text-color;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:focus,
+        &:hover {
+            color: $accent-text-color;
+        }
+    }
+
+    &__email {
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.166;
+        letter-spacing: 0.02em;
+        color: $second-text-color;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+        &:focus,
+        &:hover {
+            color: $accent-text-color;
+        }
+    }
+
+   &__socials {
+        display: flex;
+   }
+
+   &__s-link {
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.222;
+        letter-spacing: 0.02em;
+        color: $accent-text-color;
+   }
+
+   &__s-item:not(:first-child) {
+        padding-left: 10px;
+   }
+
+    &__s-item:not(:last-child) {
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+        padding-right: 10px;
+    }
+}
+
+
+.mobile-menu.is-open {
+    transform: translateX(0);
+}
+
