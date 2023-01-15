@@ -9,13 +9,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+    <!-- <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css"> -->
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
     <!--Header-->
- <header class="header">
+<header class="header">
         <div class="container">
         
         <!--Navigation bar-->
@@ -23,11 +23,12 @@
             
         <nav class="header__navigation">
             <a class="logo header__logo" href="./index.html"><span class="accent-logo">Web</span>Studio</a>
-        
+
+
             <ul class="header__navigation-list">  
 
-                <li><a class="header__navigation-item" href="./index.html">Студія</a></li>
-                <li><a class="header__navigation-item--current" href="./portfolio.html">Портфоліо</a></li>
+                <li><a class="header__navigation-item--current" href="./index.html">Студія</a></li>
+                <li><a class="header__navigation-item" href="./portfolio.html">Портфоліо</a></li>
                 <li><a class="header__navigation-item" href="#">Контакти</a></li>   
                 
             </ul>
@@ -49,6 +50,16 @@
                  +38 096 111 11 11
             </a></li>       
         </ul>
+
+         <div class="header__mobile-navigation">
+            <button class="header__open-menu js-open-menu" type="button">
+                <svg width="40" height="40">
+                    <use href="./images/icons.svg#icon-menu"></use>
+                </svg> 
+            </button>
+            </div>
+
+        </div>
         </div>
     </header>
 
@@ -281,6 +292,35 @@
         </div>
         </div>
     </footer>
+
+      <div class="mobile-menu js-menu-container">
+        <div class="mobile-menu__container">
+        <button class="mobile-menu__close-button js-close-menu" type="button">
+             <svg width="11" height="11">
+                    <use href="./images/icons.svg#icon-vector"></use>
+            </svg>
+        </button>
+        <ul class="mobile-menu__navigation">
+            <li class="mobile-menu__item"><a class="mobile-menu__link" href="./index.html">Студія</a></li>
+            <li class="mobile-menu__item"><a class="mobile-menu__link" href="./portfolio.html">Портфоліо</a></li>
+            <li class="mobile-menu__item"><a class="mobile-menu__link">Контакти</a></li>
+        </ul>
+
+        <ul class="mobile-menu__contacts">
+            <li class="mobile-menu__contact-item"><a class="mobile-menu__number" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li class="mobile-menu__contact-item"><a class="mobile-menu__email" href="mailto:info@devstudio.com">info@devstudio.com</a></li>    
+        </ul>
+
+        <ul class="mobile-menu__socials">
+            <li class="mobile-menu__s-item"><a class="mobile-menu__s-link" href="">Instagram</a></li>
+            <li class="mobile-menu__s-item"><a class="mobile-menu__s-link" href="">Twitter</a></li>
+            <li class="mobile-menu__s-item"><a class="mobile-menu__s-link" href="">Facebook</a></li>
+            <li class="mobile-menu__s-item"><a class="mobile-menu__s-link" href="">LinkedIn</a></li>
+        </ul>
+        </div>
+    </div>
     
+    <script src="./js/mobile-menu.js"></script>
+
 </body>
 </html>
