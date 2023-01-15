@@ -1,9 +1,24 @@
 .secondary-title {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.166;
     text-align: center;
     letter-spacing: 0.03em;
-    color: $main-text-color;
-    margin-bottom: 50px;
+    color: $main-text-color;  
+}
+
+@media (max-width: 1199px) {
+    .secondary-title {
+        text-align: center;
+        font-size: 28px;
+        line-height: 1.178;
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .secondary-title {
+        text-align: center;
+        font-size: 36px;
+        line-height: 1.166;
+        margin-bottom: 50px;
+    }
 }

@@ -106,7 +106,14 @@
     &__contact-list {
         display: flex;
     }
-   
+
+    &__open-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+    }
+
 }
 
 @media (max-width: 479px) {

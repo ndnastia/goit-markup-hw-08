@@ -4,7 +4,6 @@
 
     &__filter-container {
         display: flex;
-        justify-content: center;
         gap: 8px;
         margin-bottom: 50px;
     }
@@ -39,5 +38,24 @@
         display: flex;
         gap: 30px;
         flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 767px) {
+    .portfolio__filter-container {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 1199px) {
+    .portfolio__filter-items {
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 768px) {
+    .portfolio__filter-container {
+        justify-content: center;
     }
 }
