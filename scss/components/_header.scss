@@ -81,6 +81,9 @@
         }
 
         &--current {
+            font-size: 14px;
+            line-height: 1.142;
+            letter-spacing: 0.02em;
             color: $accent-text-color;
             opacity: 1;
         }

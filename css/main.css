@@ -171,6 +171,12 @@ button {
     width: 100%;
   }
 }
+@media (max-width: 768px) {
+  .clients__icon {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
 @media (min-width: 768px) and (max-width: 1199px) {
   .clients__icon {
     max-width: 226px;
@@ -670,6 +676,9 @@ button {
   color: #2196F3;
 }
 .header__navigation-item--current {
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
   color: #2196F3;
   opacity: 1;
 }
@@ -1153,6 +1162,8 @@ button {
 
 .card {
   position: relative;
+  width: 370px;
+  height: 404px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: #fff;
@@ -1233,11 +1244,6 @@ button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 450px;
-    height: 404px;
-  }
-  .card__overlay {
-    width: 450px;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -1248,12 +1254,6 @@ button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 354px;
-    height: 404px;
-  }
-  .card__overlay {
-    width: 354px;
-    height: 100%;
   }
   .card__name-container {
     height: 100%;
@@ -1263,8 +1263,6 @@ button {
   .card {
     -ms-flex-preferred-size: calc((100% - 60px) / 3);
         flex-basis: calc((100% - 60px) / 3);
-    width: 370px;
-    height: 404px;
   }
 }
 .portfolio {
@@ -1317,11 +1315,18 @@ button {
         flex-wrap: wrap;
   }
 }
-@media (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .portfolio__filter-items {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+@media (max-width: 767px) {
+  .portfolio__filter-items {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media (min-width: 768px) {
@@ -1440,6 +1445,9 @@ button {
     max-width: 450px;
     width: 100%;
   }
+  .team__list img {
+    width: 100%;
+  }
 }
 @media (max-width: 1199px) {
   .team__container {
@@ -1451,6 +1459,9 @@ button {
   .team__list {
     padding-bottom: 24px;
     max-width: 354px;
+    width: 100%;
+  }
+  .team__list img {
     width: 100%;
   }
 }

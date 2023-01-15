@@ -1,5 +1,7 @@
 .card {
     position: relative;
+    width: 370px;
+    height: 404px;
     box-sizing: border-box;
     background: $body-color;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -78,28 +80,15 @@
 @media (max-width: 767px) {
     .card {
         justify-content: center;
-        align-items: center;
-        width: 450px;
-        height: 404px; 
-         
+        align-items: center;     
     }
 
-    .card__overlay {
-        width: 450px;
-    }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
     .card {
         justify-content: center;
         align-items: center;
-        width: 354px;
-        height: 404px;
-    }
-
-    .card__overlay {
-        width: 354px;
-        height: 100%;
     }
 
     .card__name-container {
@@ -110,8 +99,6 @@
 
 @media (min-width: 1200px) {
     .card {
-        flex-basis: calc((100% - 60px) / 3);
-        width: 370px;
-        height: 404px;
+        flex-basis: calc((100% - 60px) / 3);   
     }
 }
