@@ -1,7 +1,6 @@
 .hero {
     padding-top: 118px;
     padding-bottom: 118px;
-    max-width: 1600px;
     margin: 0 auto;
     background-image:
         linear-gradient(rgba(47, 48, 58, 0.4),
@@ -50,10 +49,23 @@
     }
 }
 
+@media (max-width: 767px) {
+    .hero {
+        max-width: 480px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .hero {
+        max-width: 768px;
+    }
+}
+
 @media (min-width: 1200px) {
     .hero {
         padding-top: 200px;
         padding-bottom: 200px;
+        max-width: 1600px;
     }
 
     .hero__title {
